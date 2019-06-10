@@ -274,7 +274,7 @@ docker run -d --restart=always -v /docker/mi-connector:/config --name=mi-connect
 
 ```
 docker pull jsurf/rpi-mariadb
-docker run -d --name mariadb -e MYSQL_ROOT_PASSWORD=password1234 -e TZ=Asia/Seoul -p 33006:3306 -d jsurf/rpi-mariadb
+docker run -d --restart=always --name mariadb -e MYSQL_ROOT_PASSWORD=password1234 -e TZ=Asia/Seoul -p 33006:3306 -d jsurf/rpi-mariadb
 ```
 ### Synology NAS
 > Docker must be installed and running before continuing the installation.
